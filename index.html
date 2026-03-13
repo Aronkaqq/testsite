@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MK Tax Solutions — ITIN Applications &amp; U.S. Tax Refunds for Non-Residents</title>
+  <meta name="description" content="IRS-authorized Certifying Acceptance Agent. We help non-U.S. residents obtain ITINs, file tax returns, and claim refunds — remotely, without sending original documents." />
+  <meta name="keywords" content="ITIN application, tax refund, non-resident taxes, EIN registration, certifying acceptance agent, IRS, Form W-7, 1042-S" />
+  <!-- PLACEHOLDER: Replace with actual canonical URL -->
+  <link rel="canonical" href="https://mktaxsolutions.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MK Tax Solutions — Your U.S. Tax Refund, Simplified" />
+  <meta property="og:description" content="IRS-authorized agents helping non-U.S. residents with ITIN applications, EIN registration, and tax refund claims. 100% remote." />
+  <meta property="og:type" content="website" />
+  <!-- PLACEHOLDER: Replace with actual URLs -->
+  <meta property="og:url" content="https://mktaxsolutions.com/" />
+  <meta property="og:image" content="https://mktaxsolutions.com/og-image.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MK Tax Solutions — ITIN & Tax Refund Services" />
+  <meta name="twitter:description" content="We help non-U.S. residents obtain ITINs and claim tax refunds. IRS-authorized Certifying Acceptance Agents." />
+  <!-- PLACEHOLDER: Replace with actual image URL -->
+  <meta name="twitter:image" content="https://mktaxsolutions.com/og-image.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <!-- PLACEHOLDER: Add your favicon -->
+  <!-- <link rel="icon" href="/favicon.ico" /> -->
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "MK Tax Solutions",
+    "description": "IRS-authorized Certifying Acceptance Agent helping non-U.S. residents with ITIN applications, EIN registration, tax refund claims, and document certification.",
+    "url": "https://mktaxsolutions.com",
+    "telephone": "+1 (555) 123-4567",
+    "email": "info@mktaxsolutions.com",
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "priceRange": "$$",
+    "image": "https://mktaxsolutions.com/logo.png",
+    "sameAs": [
+      "https://instagram.com/mktaxsolutions",
+      "https://facebook.com/mktaxsolutions",
+      "https://t.me/mktaxsolutions"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tax Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ITIN Application" }, "price": "350", "priceCurrency": "USD" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "EIN Registration" }, "price": "100", "priceCurrency": "USD" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tax Refund Claims" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Document Certification" } }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --brown-900: #3B2314;
+      --brown-800: #4A3020;
+      --brown-700: #5C3D2E;
+      --brown-600: #6E4F3E;
+      --brown-500: #8B6F5E;
+      --brown-400: #A08979;
+      --brown-300: #BFA999;
+      --brown-200: #D9C8B8;
+      --brown-100: #EDE3D8;
+      --gold-600: #B8890F;
+      --gold-500: #D4A017;
+      --gold-400: #E2B83A;
+      --gold-300: #EDCE6A;
+      --gold-200: #F5E1A0;
+      --cream: #FFF8EE;
+      --cream-dark: #F5EDDF;
+      --white: #FFFFFF;
+      --text-primary: #3B2314;
+      --text-secondary: #6E4F3E;
+      --text-light: #A08979;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', -apple-system, sans-serif;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text-primary);
+      background: var(--cream);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes slideInLeft { from { opacity:0; transform:translateX(-40px); } to { opacity:1; transform:translateX(0); } }
+    @keyframes slideInRight { from { opacity:0; transform:translateX(40px); } to { opacity:1; transform:translateX(0); } }
+    @keyframes shimmer { 0% { background-position:-200% center; } 100% { background-position:200% center; } }
+    .animate-on-scroll { opacity:0; transform:translateY(30px); transition:opacity 0.7s ease, transform 0.7s ease; }
+    .animate-on-scroll.visible { opacity:1; transform:translateY(0); }
+    .animate-delay-1 { transition-delay:0.1s; }
+    .animate-delay-2 { transition-delay:0.2s; }
+    .animate-delay-3 { transition-delay:0.3s; }
+    .animate-delay-4 { transition-delay:0.4s; }
+    ::selection { background:var(--gold-300); color:var(--brown-900); }
+    ::-webkit-scrollbar { width:8px; }
+    ::-webkit-scrollbar-track { background:var(--cream); }
+    ::-webkit-scrollbar-thumb { background:var(--brown-300); border-radius:4px; }
+    ::-webkit-scrollbar-thumb:hover { background:var(--brown-400); }
+    @media (max-width:768px) {
+      .nav-desktop { display:none !important; }
+      .nav-mobile-btn { display:block !important; }
+      .contact-grid { grid-template-columns:1fr !important; }
+    }
+    @media (max-width:900px) {
+      .hero-grid { grid-template-columns:1fr !important; gap:40px !important; }
+      .step-connector { display:none !important; }
+      .pricing-grid { grid-template-columns:1fr !important; max-width:420px !important; margin-left:auto !important; margin-right:auto !important; }
+    }
+    @media (max-width:640px) {
+      .footer-dot { display:none !important; }
+      .footer-row { flex-direction:column !important; gap:20px !important; }
+    }
+  </style>
+
+  <!-- React CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    /**
+     * ===================== CONFIGURATION =====================
+     * Update these constants before deploying:
+     */
+
+    // ─── EmailJS ───
+    const EMAILJS_SERVICE_ID = "YOUR_EMAILJS_SERVICE_ID";   // PLACEHOLDER
+    const EMAILJS_TEMPLATE_ID = "YOUR_EMAILJS_TEMPLATE_ID"; // PLACEHOLDER
+    const EMAILJS_PUBLIC_KEY = "YOUR_EMAILJS_PUBLIC_KEY";    // PLACEHOLDER
+
+    // ─── Contact ───
+    const CONTACT = {
+      phone: "+1 (555) 123-4567",       // PLACEHOLDER
+      email: "info@mktaxsolutions.com",  // PLACEHOLDER
+      hours: "Mon–Fri: 9:00 AM – 6:00 PM EST",
+    };
+
+    // ─── Socials ───
+    const SOCIALS = {
+      instagram: "https://instagram.com/mktaxsolutions",   // PLACEHOLDER
+      facebook: "https://facebook.com/mktaxsolutions",     // PLACEHOLDER
+      telegram: "https://t.me/mktaxsolutions",             // PLACEHOLDER
+      whatsapp: "https://wa.me/15551234567",               // PLACEHOLDER
+    };
+
+    // ─── Trustpilot ───
+    const TRUSTPILOT_WIDGET_ID = ""; // PLACEHOLDER
+
+    // ===================== END CONFIGURATION =====================
+
+    const { useState, useEffect, useRef } = React;
+
+    // ─── Intersection Observer ───
+    function useInView(options = {}) {
+      const ref = useRef(null);
+      const [isVisible, setIsVisible] = useState(false);
+      useEffect(() => {
+        const el = ref.current;
+        if (!el) return;
+        const observer = new IntersectionObserver(([entry]) => {
+          if (entry.isIntersecting) { setIsVisible(true); observer.unobserve(el); }
+        }, { threshold: 0.15, ...options });
+        observer.observe(el);
+        return () => observer.disconnect();
+      }, []);
+      return [ref, isVisible];
+    }
+
+    // ─── Icons ───
+    const Icons = {
+      menu: <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>,
+      close: <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>,
+      chevronDown: <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>,
+      phone: <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>,
+      mail: <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>,
+      clock: <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>,
+      star: <svg width="18" height="18" viewBox="0 0 24 24" fill="#D4A017" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>,
+      shield: <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold-500)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10" stroke="var(--gold-500)"/></svg>,
+      fileText: <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold-500)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>,
+      send: <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold-500)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>,
+      checkCircle: <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold-500)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>,
+      instagram: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>,
+      facebook: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>,
+      telegram: <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>,
+      whatsapp: <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>,
+    };
+
+    const stepIcons = [
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="var(--gold-500)" strokeWidth="2"/><path d="M19 22h10M19 26h10M19 30h6" stroke="var(--brown-900)" strokeWidth="2" strokeLinecap="round"/><path d="M16 18h16v16H16z" stroke="var(--gold-500)" strokeWidth="1.5" rx="2"/><path d="M24 14v4" stroke="var(--gold-500)" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="var(--gold-500)" strokeWidth="2"/><rect x="15" y="14" width="12" height="16" rx="2" stroke="var(--brown-900)" strokeWidth="2"/><rect x="21" y="18" width="12" height="16" rx="2" stroke="var(--gold-500)" strokeWidth="1.5" fill="var(--cream)"/><path d="M24 22h6M24 26h6M24 30h3" stroke="var(--brown-900)" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="var(--gold-500)" strokeWidth="2"/><path d="M16 28l8-8 8 8" stroke="var(--brown-900)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M24 20v14" stroke="var(--brown-900)" strokeWidth="2" strokeLinecap="round"/><path d="M14 16h20" stroke="var(--gold-500)" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="var(--gold-500)" strokeWidth="2"/><path d="M17 24l5 5 9-9" stroke="var(--brown-900)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+    ];
+
+    // ─── Data ───
+    const faqData = [
+      { q: "What is an ITIN and who needs one?", a: "An Individual Taxpayer Identification Number (ITIN) is a tax processing number issued by the IRS for individuals who are required to file a U.S. tax return but aren't eligible for a Social Security Number. This includes non-resident aliens, their spouses, and dependents who need to file taxes in the United States." },
+      { q: "How long does it take to get an ITIN?", a: "The IRS typically processes ITIN applications within 7–11 weeks from the date they receive your completed application. During peak tax season (January through April), processing times may be slightly longer. We keep you updated throughout the entire process." },
+      { q: "Do I need to send my original passport to the IRS?", a: "No — that's one of the biggest advantages of working with us. As Certifying Acceptance Agents (CAAs), we're authorized by the IRS to verify and certify your identity documents. This means you keep your original passport and we send certified copies instead." },
+      { q: "What is a Certifying Acceptance Agent (CAA)?", a: "A CAA is an individual or business authorized by the IRS to assist applicants with their ITIN applications. CAAs can verify original identification documents, so applicants don't have to mail them to the IRS or visit an IRS office in person. MK Tax Solutions holds this certification." },
+      { q: "Can I claim a tax refund if I'm not a U.S. resident?", a: "Yes, in many cases. If U.S. taxes were withheld on your income — such as prize winnings, investment earnings, freelance payments, or property sales — you may be entitled to a partial or full refund. We'll review your specific situation and help you file the appropriate return." },
+      { q: "What does an EIN application involve?", a: "An Employer Identification Number (EIN) is a tax ID for your business. We handle the entire application process with the IRS, including completing Form SS-4 and following up on your behalf. Most EIN applications are processed within a few business days." },
+      { q: "How much do your services cost?", a: "We offer transparent, upfront pricing: ITIN applications are $350, EIN registration is $100, and tax refund claims start at $100 for refunds up to $1,000 (10% fee for larger refunds). No hidden costs — check our Pricing section for full details." },
+      { q: "Can I work with you remotely?", a: "Absolutely. We work with clients worldwide entirely online. You can reach us via Telegram, WhatsApp, email, or direct message. Documents can be submitted digitally, and we handle everything from there — no in-person visits required." },
+      { q: "What documents do I need to apply for an ITIN?", a: "At minimum, you'll need a valid passport (or alternative ID document) and supporting evidence such as U.S. tax documents (e.g., Form 1042-S or income records). Don't worry if you're unsure — we'll review your situation and tell you exactly what's needed during our initial consultation." },
+      { q: "What happens after I submit my documents?", a: "Once we receive your documents, we review them for accuracy and IRS compliance, prepare your ITIN application (Form W-7) along with all supporting materials, and submit everything directly to the IRS. We then monitor the progress and keep you informed until your ITIN is issued and any applicable refund is processed." },
+    ];
+
+    // PLACEHOLDER: Replace with real team member info and photos
+    const teamMembers = [
+      { name: "Maria K.", role: "Founder & Lead Tax Consultant", bio: "IRS-authorized Certifying Acceptance Agent with extensive experience helping non-U.S. residents navigate the American tax system.", photo: null },
+      { name: "Alex R.", role: "Senior Tax Specialist", bio: "Specializes in ITIN applications and tax refund claims for international clients, freelancers, and athletes.", photo: null },
+    ];
+
+    // ─── EmailJS Helper ───
+    async function sendEmail(formData, source) {
+      if (EMAILJS_PUBLIC_KEY !== "YOUR_EMAILJS_PUBLIC_KEY") {
+        const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            service_id: EMAILJS_SERVICE_ID, template_id: EMAILJS_TEMPLATE_ID, user_id: EMAILJS_PUBLIC_KEY,
+            template_params: { ...formData, source },
+          }),
+        });
+        return res.ok;
+      }
+      await new Promise(r => setTimeout(r, 1000));
+      console.log("Form submitted (demo):", formData);
+      return true;
+    }
+
+    // ════════════════════════════════════════
+    //  COMPONENTS
+    // ════════════════════════════════════════
+
+    function Navbar() {
+      const [scrolled, setScrolled] = useState(false);
+      const [mobileOpen, setMobileOpen] = useState(false);
+      useEffect(() => {
+        const onScroll = () => setScrolled(window.scrollY > 40);
+        window.addEventListener("scroll", onScroll, { passive: true });
+        return () => window.removeEventListener("scroll", onScroll);
+      }, []);
+
+      const links = [
+        { href: "#how-it-works", label: "How It Works" },
+        { href: "#about", label: "About Us" },
+        { href: "#pricing", label: "Pricing" },
+        { href: "#reviews", label: "Reviews" },
+        { href: "#faq", label: "FAQ" },
+        { href: "#contact", label: "Contact" },
+      ];
+
+      return (
+        <nav style={{ position:"fixed", top:0, left:0, right:0, zIndex:1000, padding: scrolled ? "10px 0" : "16px 0", background: scrolled ? "rgba(59,35,20,0.97)" : "transparent", backdropFilter: scrolled ? "blur(12px)" : "none", transition:"all 0.35s ease", borderBottom: scrolled ? "1px solid rgba(212,160,23,0.2)" : "none" }}>
+          <div style={{ maxWidth:1200, margin:"0 auto", padding:"0 24px", display:"flex", alignItems:"center", justifyContent:"space-between" }}>
+            <a href="#hero" style={{ display:"flex", alignItems:"center", gap:10, textDecoration:"none" }}>
+              {/* PLACEHOLDER: Replace with <img src="logo.png" alt="MK Tax Solutions" style={{width:44,height:44,borderRadius:'50%'}} /> */}
+              <div style={{ width:44, height:44, borderRadius:"50%", background:"var(--gold-500)", display:"flex", alignItems:"center", justifyContent:"center", fontFamily:"var(--font-display)", fontWeight:700, fontSize:16, color:"var(--brown-900)" }}>MK</div>
+              <span style={{ fontFamily:"var(--font-display)", fontWeight:600, fontSize:18, color:"var(--cream)", letterSpacing:"0.02em" }}>MK Tax Solutions</span>
+            </a>
+            <div style={{ display:"flex", alignItems:"center", gap:32 }} className="nav-desktop">
+              {links.map(l => <a key={l.href} href={l.href} style={{ textDecoration:"none", color:"var(--cream)", fontSize:14, fontWeight:500, letterSpacing:"0.02em", opacity:0.85, transition:"opacity 0.2s" }} onMouseEnter={e => e.target.style.opacity=1} onMouseLeave={e => e.target.style.opacity=0.85}>{l.label}</a>)}
+              <a href="#hero" style={{ textDecoration:"none", background:"var(--gold-500)", color:"var(--brown-900)", padding:"10px 24px", borderRadius:8, fontWeight:600, fontSize:14, transition:"all 0.2s", letterSpacing:"0.02em" }} onMouseEnter={e => { e.target.style.background="var(--gold-400)"; e.target.style.transform="translateY(-1px)"; }} onMouseLeave={e => { e.target.style.background="var(--gold-500)"; e.target.style.transform="translateY(0)"; }}>Get Started</a>
+            </div>
+            <button className="nav-mobile-btn" onClick={() => setMobileOpen(!mobileOpen)} style={{ display:"none", background:"none", border:"none", color:"var(--cream)", cursor:"pointer", padding:4 }}>{mobileOpen ? Icons.close : Icons.menu}</button>
+          </div>
+          {mobileOpen && (
+            <div style={{ position:"absolute", top:"100%", left:0, right:0, background:"rgba(59,35,20,0.98)", backdropFilter:"blur(16px)", padding:24, borderTop:"1px solid rgba(212,160,23,0.15)", animation:"fadeIn 0.25s ease" }}>
+              {links.map(l => <a key={l.href} href={l.href} onClick={() => setMobileOpen(false)} style={{ display:"block", textDecoration:"none", color:"var(--cream)", fontSize:16, fontWeight:500, padding:"12px 0", borderBottom:"1px solid rgba(255,255,255,0.08)" }}>{l.label}</a>)}
+              <a href="#hero" onClick={() => setMobileOpen(false)} style={{ display:"block", textAlign:"center", marginTop:16, background:"var(--gold-500)", color:"var(--brown-900)", padding:"14px 24px", borderRadius:8, fontWeight:600, fontSize:15, textDecoration:"none" }}>Get Started</a>
+            </div>
+          )}
+        </nav>
+      );
+    }
+
+    function Hero() {
+      const [form, setForm] = useState({ name:"", email:"", phone:"", situation:"", notes:"" });
+      const [submitting, setSubmitting] = useState(false);
+      const [submitted, setSubmitted] = useState(false);
+      const handleSubmit = async () => {
+        setSubmitting(true);
+        try {
+          const ok = await sendEmail({ from_name:form.name, from_email:form.email, phone:form.phone, situation:form.situation, notes:form.notes }, "Hero Form");
+          if (ok) setSubmitted(true);
+        } catch { alert("Something went wrong. Please try contacting us directly."); }
+        setSubmitting(false);
+      };
+      const inp = { width:"100%", padding:"14px 16px", border:"1.5px solid var(--brown-200)", borderRadius:8, fontSize:15, fontFamily:"var(--font-body)", background:"var(--white)", color:"var(--text-primary)", outline:"none", transition:"border-color 0.2s" };
+      const focus = e => e.target.style.borderColor = "var(--gold-500)";
+      const blur = e => e.target.style.borderColor = "var(--brown-200)";
+
+      return (
+        <section id="hero" style={{ minHeight:"100vh", display:"flex", alignItems:"center", background:"linear-gradient(165deg, var(--brown-900) 0%, var(--brown-800) 40%, var(--brown-700) 100%)", position:"relative", overflow:"hidden", paddingTop:80 }}>
+          <div style={{ position:"absolute", top:-120, right:-120, width:400, height:400, borderRadius:"50%", background:"rgba(212,160,23,0.06)" }} />
+          <div style={{ position:"absolute", bottom:-80, left:-80, width:300, height:300, borderRadius:"50%", background:"rgba(212,160,23,0.04)" }} />
+          <div style={{ maxWidth:1200, margin:"0 auto", padding:"60px 24px", display:"grid", gridTemplateColumns:"1fr 1fr", gap:60, alignItems:"center", position:"relative", zIndex:1, width:"100%" }} className="hero-grid">
+            <div style={{ animation:"slideInLeft 0.8s ease" }}>
+              <div style={{ display:"inline-block", padding:"6px 16px", borderRadius:100, background:"rgba(212,160,23,0.15)", border:"1px solid rgba(212,160,23,0.3)", marginBottom:24 }}>
+                <span style={{ color:"var(--gold-400)", fontSize:13, fontWeight:600, letterSpacing:"0.06em", textTransform:"uppercase" }}>IRS-Authorized Certifying Acceptance Agent</span>
+              </div>
+              <h1 style={{ fontFamily:"var(--font-display)", fontSize:"clamp(36px,5vw,56px)", fontWeight:700, color:"var(--cream)", lineHeight:1.15, marginBottom:20 }}>
+                Your U.S. Tax Refund,{" "}
+                <span style={{ background:"linear-gradient(90deg, var(--gold-400), var(--gold-500), var(--gold-400))", backgroundSize:"200% auto", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", animation:"shimmer 4s linear infinite" }}>Simplified</span>
+              </h1>
+              <p style={{ fontSize:18, lineHeight:1.7, color:"var(--brown-200)", marginBottom:32, maxWidth:480 }}>
+                We help non-U.S. residents obtain ITINs, file tax returns, and claim refunds — without sending your original documents to the IRS. Everything handled remotely, start to finish.
+              </p>
+              <div style={{ display:"flex", gap:24, flexWrap:"wrap" }}>
+                {["No original docs required","100% remote process","IRS-certified agents"].map((t,i) => (
+                  <div key={i} style={{ display:"flex", alignItems:"center", gap:8 }}>
+                    <div style={{ width:20, height:20, borderRadius:"50%", background:"rgba(212,160,23,0.2)", display:"flex", alignItems:"center", justifyContent:"center" }}>
+                      <svg width="12" height="12" fill="none" stroke="var(--gold-400)" strokeWidth="2.5" strokeLinecap="round"><polyline points="2 6 5 9 10 3"/></svg>
+                    </div>
+                    <span style={{ color:"var(--brown-200)", fontSize:14, fontWeight:500 }}>{t}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{ background:"var(--cream)", borderRadius:16, padding:"36px 32px", boxShadow:"0 24px 80px rgba(0,0,0,0.3)", animation:"slideInRight 0.8s ease" }}>
+              {submitted ? (
+                <div style={{ textAlign:"center", padding:"40px 0" }}>
+                  <div style={{ width:64, height:64, borderRadius:"50%", background:"rgba(212,160,23,0.12)", display:"flex", alignItems:"center", justifyContent:"center", margin:"0 auto 20px" }}>
+                    <svg width="32" height="32" fill="none" stroke="var(--gold-600)" strokeWidth="2.5" strokeLinecap="round"><polyline points="6 16 12 22 26 8"/></svg>
+                  </div>
+                  <h3 style={{ fontFamily:"var(--font-display)", fontSize:24, marginBottom:8 }}>Thank You!</h3>
+                  <p style={{ color:"var(--text-secondary)", lineHeight:1.6 }}>We've received your information and will reach out within 24 hours to discuss your tax situation.</p>
+                </div>
+              ) : (
+                <>
+                  <h3 style={{ fontFamily:"var(--font-display)", fontSize:24, fontWeight:600, marginBottom:4, color:"var(--text-primary)" }}>Get Your Free Consultation</h3>
+                  <p style={{ color:"var(--text-secondary)", fontSize:14, marginBottom:24, lineHeight:1.5 }}>Tell us about your situation and we'll guide you through the next steps.</p>
+                  <div style={{ display:"flex", flexDirection:"column", gap:14 }}>
+                    <input type="text" placeholder="Full name" value={form.name} onChange={e => setForm({...form, name:e.target.value})} style={inp} onFocus={focus} onBlur={blur} />
+                    <input type="email" placeholder="Email address" value={form.email} onChange={e => setForm({...form, email:e.target.value})} style={inp} onFocus={focus} onBlur={blur} />
+                    <input type="tel" placeholder="Phone number — optional" value={form.phone} onChange={e => setForm({...form, phone:e.target.value})} style={inp} onFocus={focus} onBlur={blur} />
+                    <select value={form.situation} onChange={e => setForm({...form, situation:e.target.value})} style={{...inp, color: form.situation ? "var(--text-primary)" : "var(--text-light)", cursor:"pointer"}} onFocus={focus} onBlur={blur}>
+                      <option value="" disabled>What do you need help with?</option>
+                      <option value="itin">ITIN Application</option>
+                      <option value="ein">EIN Registration</option>
+                      <option value="refund">Tax Refund Claim</option>
+                      <option value="filing">Tax Return Filing</option>
+                      <option value="other">Other / Not Sure</option>
+                    </select>
+                    <textarea placeholder="Notes — optional (tell us more about your situation)" value={form.notes} onChange={e => setForm({...form, notes:e.target.value})} rows={3} style={{...inp, resize:"vertical", minHeight:70}} onFocus={focus} onBlur={blur} />
+                    <button type="button" onClick={handleSubmit} disabled={submitting || !form.name || !form.email || !form.situation} style={{ width:"100%", padding:16, border:"none", borderRadius:8, background: submitting ? "var(--brown-400)" : "var(--brown-900)", color:"var(--cream)", fontSize:16, fontWeight:600, fontFamily:"var(--font-body)", cursor: submitting ? "wait" : "pointer", transition:"all 0.2s", letterSpacing:"0.02em", opacity: (!form.name || !form.email || !form.situation) ? 0.5 : 1, marginTop:4 }} onMouseEnter={e => { if(!submitting) e.target.style.background="var(--brown-800)"; }} onMouseLeave={e => { if(!submitting) e.target.style.background="var(--brown-900)"; }}>
+                      {submitting ? "Sending..." : "Request Free Consultation"}
+                    </button>
+                    <p style={{ fontSize:12, color:"var(--text-light)", textAlign:"center", lineHeight:1.5 }}>By submitting, you agree to our privacy policy. We'll never share your information.</p>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    function HowItWorks() {
+      const [ref, visible] = useInView();
+      const steps = [
+        { num:"01", title:"Check Your Eligibility", desc:"Determine if you need an ITIN — whether you've earned U.S. income, had taxes withheld, or need to file a nonresident return." },
+        { num:"02", title:"Gather Your Documents", desc:"Prepare your passport (or alternative ID) and any U.S. tax documents like Form 1042-S or income records. We'll tell you exactly what's needed." },
+        { num:"03", title:"Submit & We Review", desc:"Contact us via Telegram, WhatsApp, or email. Send your documents securely — we review everything for accuracy and IRS compliance." },
+        { num:"04", title:"Sit Back & Get Results", desc:"We file your ITIN application and tax return directly with the IRS. ITINs process in 7–11 weeks, and refunds follow once approved." },
+      ];
+      return (
+        <section id="how-it-works" style={{ padding:"100px 24px", background:"var(--white)" }} ref={ref}>
+          <div style={{ maxWidth:1100, margin:"0 auto" }}>
+            <div style={{ textAlign:"center", marginBottom:64 }}>
+              <span style={{ display:"inline-block", padding:"6px 16px", borderRadius:100, background:"rgba(212,160,23,0.1)", color:"var(--gold-600)", fontSize:13, fontWeight:600, letterSpacing:"0.06em", textTransform:"uppercase", marginBottom:16 }}>Simple Process</span>
+              <h2 style={{ fontFamily:"var(--font-display)", fontSize:"clamp(30px,4vw,44px)", fontWeight:700, marginBottom:16 }}>How It Works</h2>
+              <p style={{ color:"var(--text-secondary)", fontSize:17, maxWidth:560, margin:"0 auto", lineHeight:1.6 }}>From eligibility check to receiving your ITIN and refund — we handle it all in four straightforward steps.</p>
+            </div>
+            <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(240px, 1fr))", gap:32 }}>
+              {steps.map((s,i) => (
+                <div key={i} className={`animate-on-scroll animate-delay-${i+1} ${visible?"visible":""}`} style={{ position:"relative", padding:"36px 28px 32px", background:"var(--cream)", borderRadius:16, border:"1px solid var(--brown-100)", transition:"all 0.3s ease" }} onMouseEnter={e => { e.currentTarget.style.transform="translateY(-4px)"; e.currentTarget.style.boxShadow="0 12px 40px rgba(59,35,20,0.08)"; }} onMouseLeave={e => { e.currentTarget.style.transform="translateY(0)"; e.currentTarget.style.boxShadow="none"; }}>
+                  <div style={{ marginBottom:20 }}>{stepIcons[i]}</div>
+                  <div style={{ fontFamily:"var(--font-display)", fontSize:13, fontWeight:700, color:"var(--gold-600)", marginBottom:8, letterSpacing:"0.08em" }}>STEP {s.num}</div>
+                  <h3 style={{ fontFamily:"var(--font-display)", fontSize:20, fontWeight:600, marginBottom:10 }}>{s.title}</h3>
+                  <p style={{ color:"var(--text-secondary)", fontSize:15, lineHeight:1.65 }}>{s.desc}</p>
+                  {i < 3 && <div className="step-connector" style={{ position:"absolute", top:"50%", right:-18, width:36, height:2, background:"var(--brown-200)" }} />}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    function About() {
+      const [ref, visible] = useInView();
+      const services = [
+        { icon: Icons.shield, title:"ITIN Applications", desc:"We handle your entire ITIN application — from document verification to IRS submission." },
+        { icon: Icons.fileText, title:"EIN Registration", desc:"Need a tax ID for your U.S. business? We manage the full EIN application process." },
+        { icon: Icons.send, title:"Tax Refund Claims", desc:"If U.S. taxes were withheld on your income, we'll help you file and claim eligible refunds." },
+        { icon: Icons.checkCircle, title:"Document Certification", desc:"As CAAs, we certify your identity documents on your behalf — no originals sent to the IRS." },
+      ];
+      return (
+        <section id="about" style={{ padding:"100px 24px", background:"var(--brown-900)", color:"var(--cream)", position:"relative", overflow:"hidden" }} ref={ref}>
+          <div style={{ position:"absolute", top:0, right:0, width:500, height:500, borderRadius:"50%", background:"rgba(212,160,23,0.03)", transform:"translate(30%,-30%)" }} />
+          <div style={{ maxWidth:1100, margin:"0 auto", position:"relative", zIndex:1 }}>
+            <div style={{ textAlign:"center", marginBottom:64 }}>
+              <span style={{ display:"inline-block", padding:"6px 16px", borderRadius:100, background:"rgba(212,160,23,0.15)", color:"var(--gold-400)", fontSize:13, fontWeight:600, letterSpacing:"0.06em", textTransform:"uppercase", marginBottom:16 }}>About Us</span>
+              <h2 style={{ fontFamily:"var(--font-display)", fontSize:"clamp(30px,4vw,44px)", fontWeight:700, marginBottom:16 }}>Your Trusted Certifying Acceptance Agents</h2>
+              <p style={{ color:"var(--brown-200)", fontSize:17, maxWidth:640, margin:"0 auto", lineHeight:1.7 }}>We are certified Certifying Acceptance Agents (CAAs) authorized by the IRS to assist non-U.S. residents with obtaining tax identification numbers and handling U.S. tax matters. Our certification means we can verify your documents — so you never risk sending originals through the mail.</p>
+            </div>
+            <div className={`animate-on-scroll ${visible?"visible":""}`} style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(240px, 1fr))", gap:24, marginBottom:64 }}>
+              {services.map((s,i) => (
+                <div key={i} style={{ padding:"32px 24px", borderRadius:14, background:"rgba(255,255,255,0.04)", border:"1px solid rgba(255,255,255,0.08)", transition:"all 0.3s" }} onMouseEnter={e => { e.currentTarget.style.background="rgba(212,160,23,0.08)"; e.currentTarget.style.borderColor="rgba(212,160,23,0.2)"; }} onMouseLeave={e => { e.currentTarget.style.background="rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor="rgba(255,255,255,0.08)"; }}>
+                  <div style={{ marginBottom:16 }}>{s.icon}</div>
+                  <h3 style={{ fontFamily:"var(--font-display)", fontSize:19, fontWeight:600, marginBottom:8 }}>{s.title}</h3>
+                  <p style={{ color:"var(--brown-200)", fontSize:15, lineHeight:1.6 }}>{s.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div style={{ textAlign:"center", marginBottom:40 }}>
+              <h3 style={{ fontFamily:"var(--font-display)", fontSize:28, fontWeight:600, marginBottom:8 }}>Meet Our Team</h3>
+              <p style={{ color:"var(--brown-200)", fontSize:15 }}>Experienced professionals dedicated to simplifying U.S. taxes for international clients.</p>
+            </div>
+            <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(280px, 1fr))", gap:28, maxWidth:700, margin:"0 auto" }}>
+              {teamMembers.map((m,i) => (
+                <div key={i} style={{ padding:"32px 28px", borderRadius:14, textAlign:"center", background:"rgba(255,255,255,0.05)", border:"1px solid rgba(255,255,255,0.08)" }}>
+                  {/* PLACEHOLDER: Replace with <img src={m.photo} style={{width:90,height:90,borderRadius:'50%',objectFit:'cover'}} /> */}
+                  <div style={{ width:90, height:90, borderRadius:"50%", margin:"0 auto 20px", background:"linear-gradient(135deg, var(--brown-600), var(--brown-700))", border:"3px solid var(--gold-500)", display:"flex", alignItems:"center", justifyContent:"center", fontFamily:"var(--font-display)", fontSize:28, fontWeight:700, color:"var(--gold-400)" }}>{m.name.charAt(0)}</div>
+                  <h4 style={{ fontFamily:"var(--font-display)", fontSize:20, fontWeight:600, marginBottom:4 }}>{m.name}</h4>
+                  <p style={{ color:"var(--gold-400)", fontSize:13, fontWeight:600, letterSpacing:"0.04em", marginBottom:12 }}>{m.role}</p>
+                  <p style={{ color:"var(--brown-200)", fontSize:14, lineHeight:1.6 }}>{m.bio}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // ─── PRICING (NEW) ───
+    function Pricing() {
+      const [ref, visible] = useInView();
+      return (
+        <section id="pricing" style={{ padding:"100px 24px", background:"var(--cream)" }} ref={ref}>
+          <div style={{ maxWidth:1000, margin:"0 auto" }}>
+            <div style={{ textAlign:"center", marginBottom:64 }}>
+              <span style={{ display:"inline-block", padding:"6px 16px", borderRadius:100, background:"rgba(212,160,23,0.1)", color:"var(--gold-600)", fontSize:13, fontWeight:600, letterSpacing:"0.06em", textTransform:"uppercase", marginBottom:16 }}>Transparent Pricing</span>
+              <h2 style={{ fontFamily:"var(--font-display)", fontSize:"clamp(30px,4vw,44px)", fontWeight:700, marginBottom:16 }}>Services &amp; Prices</h2>
+              <p style={{ color:"var(--text-secondary)", fontSize:17, maxWidth:520, margin:"0 auto", lineHeight:1.6 }}>Clear, upfront pricing with no hidden fees. You know exactly what you're paying before we begin.</p>
+            </div>
+            <div className="pricing-grid" style={{ display:"grid", gridTemplateColumns:"repeat(3, 1fr)", gap:28, maxWidth:960, margin:"0 auto" }}>
+              {/* ITIN */}
+              <div className={`animate-on-scroll ${visible?"visible":""}`} style={{ background:"var(--white)", borderRadius:16, padding:"40px 32px", border:"2px solid var(--gold-500)", boxShadow:"0 8px 32px rgba(59,35,20,0.08)", position:"relative", overflow:"hidden", transition:"transform 0.3s" }} onMouseEnter={e => e.currentTarget.style.transform="translateY(-4px)"} onMouseLeave={e => e.currentTarget.style.transform="translateY(0)"}>
+                <div style={{ position:"absolute", top:0, left:0, right:0, height:4, background:"linear-gradient(90deg, var(--gold-500), var(--gold-400))" }} />
+                <div style={{ display:"inline-block", padding:"4px 12px", borderRadius:100, background:"rgba(212,160,23,0.12)", color:"var(--gold-600)", fontSize:11, fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", marginBottom:20 }}>Most Popular</div>
+                <h3 style={{ fontFamily:"var(--font-display)", fontSize:22, fontWeight:700, marginBottom:8 }}>ITIN Application</h3>
+                <p style={{ color:"var(--text-secondary)", fontSize:14, lineHeight:1.6, marginBottom:24 }}>Full ITIN application service including document certification and IRS submission.</p>
+                <div style={{ marginBottom:24 }}>
+                  <span style={{ fontFamily:"var(--font-display)", fontSize:48, fontWeight:700, color:"var(--brown-900)" }}>$350</span>
+                </div>
+                <div style={{ display:"flex", flexDirection:"column", gap:12 }}>
+                  {["Document verification & certification","Form W-7 preparation","Direct IRS submission","Status tracking & updates","No original documents needed"].map((f,i) => (
+                    <div key={i} style={{ display:"flex", alignItems:"center", gap:10 }}>
+                      <svg width="16" height="16" fill="none" stroke="var(--gold-600)" strokeWidth="2.5" strokeLinecap="round"><polyline points="2 8 6 12 14 4"/></svg>
+                      <span style={{ fontSize:14, color:"var(--text-secondary)" }}>{f}</span>
+                    </div>
+                  ))}
+                </div>
+                <a href="#hero" style={{ display:"block", textAlign:"center", marginTop:28, padding:"14px", borderRadius:8, background:"var(--brown-900)", color:"var(--cream)", textDecoration:"none", fontWeight:600, fontSize:15, transition:"background 0.2s" }} onMouseEnter={e => e.target.style.background="var(--brown-800)"} onMouseLeave={e => e.target.style.background="var(--brown-900)"}>Get Started</a>
+              </div>
+
+              {/* EIN */}
+              <div className={`animate-on-scroll animate-delay-2 ${visible?"visible":""}`} style={{ background:"var(--white)", borderRadius:16, padding:"40px 32px", border:"1px solid var(--brown-100)", boxShadow:"0 4px 20px rgba(59,35,20,0.04)", transition:"transform 0.3s" }} onMouseEnter={e => e.currentTarget.style.transform="translateY(-4px)"} onMouseLeave={e => e.currentTarget.style.transform="translateY(0)"}>
+                <h3 style={{ fontFamily:"var(--font-display)", fontSize:22, fontWeight:700, marginBottom:8, marginTop:32 }}>EIN Registration</h3>
+                <p style={{ color:"var(--text-secondary)", fontSize:14, lineHeight:1.6, marginBottom:24 }}>Employer Identification Number for your U.S. business or investments.</p>
+                <div style={{ marginBottom:24 }}>
+                  <span style={{ fontFamily:"var(--font-display)", fontSize:48, fontWeight:700, color:"var(--brown-900)" }}>$100</span>
+                </div>
+                <div style={{ display:"flex", flexDirection:"column", gap:12 }}>
+                  {["Form SS-4 preparation","IRS application & follow-up","Fast processing","Business tax ID delivered","Full support throughout"].map((f,i) => (
+                    <div key={i} style={{ display:"flex", alignItems:"center", gap:10 }}>
+                      <svg width="16" height="16" fill="none" stroke="var(--gold-600)" strokeWidth="2.5" strokeLinecap="round"><polyline points="2 8 6 12 14 4"/></svg>
+                      <span style={{ fontSize:14, color:"var(--text-secondary)" }}>{f}</span>
+                    </div>
+                  ))}
+                </div>
+                <a href="#hero" style={{ display:"block", textAlign:"center", marginTop:28, padding:"14px", borderRadius:8, background:"var(--cream)", color:"var(--brown-900)", textDecoration:"none", fontWeight:600, fontSize:15, border:"1.5px solid var(--brown-200)", transition:"all 0.2s" }} onMouseEnter={e => { e.target.style.borderColor="var(--brown-900)"; e.target.style.background="var(--cream-dark)"; }} onMouseLeave={e => { e.target.style.borderColor="var(--brown-200)"; e.target.style.background="var(--cream)"; }}>Get Started</a>
+              </div>
+
+              {/* Tax Refund */}
+              <div className={`animate-on-scroll animate-delay-3 ${visible?"visible":""}`} style={{ background:"var(--white)", borderRadius:16, padding:"40px 32px", border:"1px solid var(--brown-100)", boxShadow:"0 4px 20px rgba(59,35,20,0.04)", transition:"transform 0.3s" }} onMouseEnter={e => e.currentTarget.style.transform="translateY(-4px)"} onMouseLeave={e => e.currentTarget.style.transform="translateY(0)"}>
+                <h3 style={{ fontFamily:"var(--font-display)", fontSize:22, fontWeight:700, marginBottom:8, marginTop:32 }}>Tax Refund</h3>
+                <p style={{ color:"var(--text-secondary)", fontSize:14, lineHeight:1.6, marginBottom:24 }}>Claim your U.S. tax refund on withheld income — prize winnings, investments, freelance work.</p>
+                <div style={{ marginBottom:8 }}>
+                  <span style={{ fontFamily:"var(--font-display)", fontSize:48, fontWeight:700, color:"var(--brown-900)" }}>$100</span>
+                </div>
+                <p style={{ color:"var(--text-secondary)", fontSize:13, marginBottom:24, lineHeight:1.5 }}>
+                  For refunds up to $1,000.<br/>
+                  <strong style={{ color:"var(--text-primary)" }}>10% fee</strong> for refunds above $1,000.
+                </p>
+                <div style={{ display:"flex", flexDirection:"column", gap:12 }}>
+                  {["Tax return preparation & filing","Refund eligibility review","IRS submission & tracking","Applicable to all income types"].map((f,i) => (
+                    <div key={i} style={{ display:"flex", alignItems:"center", gap:10 }}>
+                      <svg width="16" height="16" fill="none" stroke="var(--gold-600)" strokeWidth="2.5" strokeLinecap="round"><polyline points="2 8 6 12 14 4"/></svg>
+                      <span style={{ fontSize:14, color:"var(--text-secondary)" }}>{f}</span>
+                    </div>
+                  ))}
+                </div>
+                <a href="#hero" style={{ display:"block", textAlign:"center", marginTop:28, padding:"14px", borderRadius:8, background:"var(--cream)", color:"var(--brown-900)", textDecoration:"none", fontWeight:600, fontSize:15, border:"1.5px solid var(--brown-200)", transition:"all 0.2s" }} onMouseEnter={e => { e.target.style.borderColor="var(--brown-900)"; e.target.style.background="var(--cream-dark)"; }} onMouseLeave={e => { e.target.style.borderColor="var(--brown-200)"; e.target.style.background="var(--cream)"; }}>Get Started</a>
+              </div>
+            </div>
+
+            <p style={{ textAlign:"center", marginTop:40, color:"var(--text-light)", fontSize:14, lineHeight:1.6, maxWidth:500, margin:"40px auto 0" }}>
+              Not sure which service you need? <a href="#contact" style={{ color:"var(--gold-600)", fontWeight:600, textDecoration:"none" }}>Contact us</a> for a free consultation — we'll review your situation and recommend the best path forward.
+            </p>
+          </div>
+        </section>
+      );
+    }
+
+    function Trustpilot() {
+      const [ref, visible] = useInView();
+      return (
+        <section id="reviews" style={{ padding:"80px 24px", background:"var(--white)" }} ref={ref}>
+          <div style={{ maxWidth:900, margin:"0 auto", textAlign:"center" }}>
+            <span style={{ display:"inline-block", padding:"6px 16px", borderRadius:100, background:"rgba(212,160,23,0.1)", color:"var(--gold-600)", fontSize:13, fontWeight:600, letterSpacing:"0.06em", textTransform:"uppercase", marginBottom:16 }}>Testimonials</span>
+            <h2 style={{ fontFamily:"var(--font-display)", fontSize:"clamp(28px,3.5vw,40px)", fontWeight:700, marginBottom:16 }}>What Our Clients Say</h2>
+            <p style={{ color:"var(--text-secondary)", fontSize:16, marginBottom:40, lineHeight:1.6 }}>We're proud of the trust our clients place in us. Here's what they have to say.</p>
+            <div className={`animate-on-scroll ${visible?"visible":""}`} style={{ padding:"48px 32px", borderRadius:16, background:"var(--cream)", border:"1px solid var(--brown-100)", boxShadow:"0 4px 20px rgba(59,35,20,0.04)" }}>
+              {TRUSTPILOT_WIDGET_ID ? (
+                <div id="trustpilot-widget" data-widget-id={TRUSTPILOT_WIDGET_ID}></div>
+              ) : (
+                <div>
+                  <div style={{ display:"flex", justifyContent:"center", gap:4, marginBottom:16 }}>{[1,2,3,4,5].map(i => <span key={i}>{Icons.star}</span>)}</div>
+                  <p style={{ color:"var(--text-secondary)", fontSize:15, fontStyle:"italic", lineHeight:1.7, maxWidth:500, margin:"0 auto 24px" }}>
+                    "Trustpilot reviews will appear here once the widget is configured. In the meantime, contact us to hear directly from our satisfied clients."
+                  </p>
+                  <div style={{ display:"inline-block", padding:"8px 20px", borderRadius:8, background:"var(--white)", color:"var(--text-light)", fontSize:13, fontWeight:500 }}>
+                    Trustpilot Widget — Paste your widget ID in the configuration section
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    function FAQ() {
+      const [openIndex, setOpenIndex] = useState(null);
+      const [ref, visible] = useInView();
+      return (
+        <section id="faq" style={{ padding:"100px 24px", background:"var(--cream)" }} ref={ref}>
+          <div style={{ maxWidth:780, margin:"0 auto" }}>
+            <div style={{ textAlign:"center", marginBottom:56 }}>
+              <span style={{ display:"inline-block", padding:"6px 16px", borderRadius:100, background:"rgba(212,160,23,0.1)", color:"var(--gold-600)", fontSize:13, fontWeight:600, letterSpacing:"0.06em", textTransform:"uppercase", marginBottom:16 }}>FAQ</span>
+              <h2 style={{ fontFamily:"var(--font-display)", fontSize:"clamp(28px,3.5vw,40px)", fontWeight:700, marginBottom:12 }}>Frequently Asked Questions</h2>
+              <p style={{ color:"var(--text-secondary)", fontSize:16, lineHeight:1.6 }}>Everything you need to know about our services and the ITIN process.</p>
+            </div>
+            <div style={{ display:"flex", flexDirection:"column", gap:12 }}>
+              {faqData.map((item,i) => {
+                const isOpen = openIndex === i;
+                return (
+                  <div key={i} className={`animate-on-scroll ${visible?"visible":""}`} style={{ background: isOpen ? "var(--white)" : "var(--white)", border:`1.5px solid ${isOpen ? "var(--gold-300)" : "var(--brown-100)"}`, borderRadius:12, overflow:"hidden", transition:"all 0.3s ease", transitionDelay:`${i*0.03}s` }}>
+                    <button onClick={() => setOpenIndex(isOpen ? null : i)} style={{ width:"100%", padding:"20px 24px", display:"flex", alignItems:"center", justifyContent:"space-between", gap:16, background:"none", border:"none", cursor:"pointer", fontFamily:"var(--font-body)", fontSize:16, fontWeight:600, color:"var(--text-primary)", textAlign:"left" }}>
+                      <span>{item.q}</span>
+                      <span style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0)", transition:"transform 0.3s ease", flexShrink:0, color:"var(--gold-600)" }}>{Icons.chevronDown}</span>
+                    </button>
+                    <div style={{ maxHeight: isOpen ? 300 : 0, overflow:"hidden", transition:"max-height 0.35s ease" }}>
+                      <p style={{ padding:"0 24px 20px", color:"var(--text-secondary)", fontSize:15, lineHeight:1.7 }}>{item.a}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    function Contact() {
+      const [ref, visible] = useInView();
+      const [form, setForm] = useState({ name:"", email:"", phone:"", situation:"", notes:"" });
+      const [submitting, setSubmitting] = useState(false);
+      const [submitted, setSubmitted] = useState(false);
+      const handleSubmit = async () => {
+        setSubmitting(true);
+        try {
+          const ok = await sendEmail({ from_name:form.name, from_email:form.email, phone:form.phone, situation:form.situation, notes:form.notes }, "Contact Page Form");
+          if (ok) setSubmitted(true);
+        } catch { alert("Something went wrong. Please try contacting us directly."); }
+        setSubmitting(false);
+      };
+      const infoItems = [
+        { icon: Icons.phone, label:"Phone", value: CONTACT.phone, href: `tel:${CONTACT.phone.replace(/\s/g,"")}` },
+        { icon: Icons.mail, label:"Email", value: CONTACT.email, href: `mailto:${CONTACT.email}` },
+        { icon: Icons.clock, label:"Hours", value: CONTACT.hours },
+      ];
+      const inp = { width:"100%", padding:"14px 16px", border:"1.5px solid var(--brown-200)", borderRadius:8, fontSize:15, fontFamily:"var(--font-body)", background:"var(--white)", color:"var(--text-primary)", outline:"none", transition:"border-color 0.2s" };
+      const focus = e => e.target.style.borderColor = "var(--gold-500)";
+      const blur = e => e.target.style.borderColor = "var(--brown-200)";
+
+      return (
+        <section id="contact" style={{ padding:"100px 24px", background:"linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%)" }} ref={ref}>
+          <div style={{ maxWidth:1100, margin:"0 auto" }}>
+            <div style={{ textAlign:"center", marginBottom:56 }}>
+              <span style={{ display:"inline-block", padding:"6px 16px", borderRadius:100, background:"rgba(212,160,23,0.1)", color:"var(--gold-600)", fontSize:13, fontWeight:600, letterSpacing:"0.06em", textTransform:"uppercase", marginBottom:16 }}>Contact Us</span>
+              <h2 style={{ fontFamily:"var(--font-display)", fontSize:"clamp(28px,3.5vw,40px)", fontWeight:700, marginBottom:12 }}>Let's Get Started</h2>
+              <p style={{ color:"var(--text-secondary)", fontSize:16, lineHeight:1.6, maxWidth:540, margin:"0 auto" }}>Ready to simplify your U.S. tax process? Reach out today for a free consultation.</p>
+            </div>
+            <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:40 }} className="contact-grid">
+              {/* Info */}
+              <div className={`animate-on-scroll ${visible?"visible":""}`}>
+                <div style={{ background:"var(--white)", borderRadius:16, padding:"36px 32px", border:"1px solid var(--brown-100)", boxShadow:"0 4px 20px rgba(59,35,20,0.04)", height:"100%", display:"flex", flexDirection:"column" }}>
+                  <h3 style={{ fontFamily:"var(--font-display)", fontSize:22, fontWeight:600, marginBottom:28 }}>Contact Information</h3>
+                  <div style={{ display:"flex", flexDirection:"column", gap:24, flex:1 }}>
+                    {infoItems.map((item,i) => (
+                      <div key={i} style={{ display:"flex", gap:16, alignItems:"flex-start" }}>
+                        <div style={{ width:44, height:44, borderRadius:10, flexShrink:0, background:"rgba(212,160,23,0.08)", display:"flex", alignItems:"center", justifyContent:"center", color:"var(--gold-600)" }}>{item.icon}</div>
+                        <div>
+                          <p style={{ fontSize:12, fontWeight:600, color:"var(--text-light)", textTransform:"uppercase", letterSpacing:"0.06em", marginBottom:4 }}>{item.label}</p>
+                          {item.href ? <a href={item.href} style={{ color:"var(--text-primary)", textDecoration:"none", fontSize:15, fontWeight:500 }}>{item.value}</a> : <p style={{ color:"var(--text-primary)", fontSize:15, fontWeight:500, lineHeight:1.5 }}>{item.value}</p>}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ marginTop:32, paddingTop:24, borderTop:"1px solid var(--brown-100)" }}>
+                    <p style={{ fontSize:13, fontWeight:600, color:"var(--text-light)", textTransform:"uppercase", letterSpacing:"0.06em", marginBottom:14 }}>Connect with us</p>
+                    <div style={{ display:"flex", gap:12 }}>
+                      {[
+                        { icon:Icons.telegram, href:SOCIALS.telegram, label:"Telegram" },
+                        { icon:Icons.whatsapp, href:SOCIALS.whatsapp, label:"WhatsApp" },
+                        { icon:Icons.instagram, href:SOCIALS.instagram, label:"Instagram" },
+                        { icon:Icons.facebook, href:SOCIALS.facebook, label:"Facebook" },
+                      ].map((s,i) => (
+                        <a key={i} href={s.href} target="_blank" rel="noopener noreferrer" title={s.label} style={{ width:44, height:44, borderRadius:10, background:"var(--brown-900)", color:"var(--cream)", display:"flex", alignItems:"center", justifyContent:"center", transition:"all 0.2s", textDecoration:"none" }} onMouseEnter={e => { e.currentTarget.style.background="var(--gold-600)"; e.currentTarget.style.transform="translateY(-2px)"; }} onMouseLeave={e => { e.currentTarget.style.background="var(--brown-900)"; e.currentTarget.style.transform="translateY(0)"; }}>{s.icon}</a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Form */}
+              <div className={`animate-on-scroll animate-delay-2 ${visible?"visible":""}`}>
+                <div style={{ background:"var(--white)", borderRadius:16, padding:"36px 32px", border:"1px solid var(--brown-100)", height:"100%", boxShadow:"0 4px 20px rgba(59,35,20,0.04)" }}>
+                  {submitted ? (
+                    <div style={{ textAlign:"center", padding:"60px 0", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", height:"100%" }}>
+                      <div style={{ width:64, height:64, borderRadius:"50%", background:"rgba(212,160,23,0.12)", display:"flex", alignItems:"center", justifyContent:"center", margin:"0 auto 20px" }}>
+                        <svg width="32" height="32" fill="none" stroke="var(--gold-600)" strokeWidth="2.5" strokeLinecap="round"><polyline points="6 16 12 22 26 8"/></svg>
+                      </div>
+                      <h3 style={{ fontFamily:"var(--font-display)", fontSize:24, marginBottom:8 }}>Message Sent!</h3>
+                      <p style={{ color:"var(--text-secondary)", lineHeight:1.6 }}>We'll get back to you within 24 hours.</p>
+                    </div>
+                  ) : (
+                    <>
+                      <h3 style={{ fontFamily:"var(--font-display)", fontSize:22, fontWeight:600, marginBottom:4 }}>Send Us a Message</h3>
+                      <p style={{ color:"var(--text-secondary)", fontSize:14, marginBottom:24, lineHeight:1.5 }}>Fill out the form and we'll respond as soon as possible.</p>
+                      <div style={{ display:"flex", flexDirection:"column", gap:14 }}>
+                        <input type="text" placeholder="Full name" value={form.name} onChange={e => setForm({...form, name:e.target.value})} style={inp} onFocus={focus} onBlur={blur} />
+                        <input type="email" placeholder="Email address" value={form.email} onChange={e => setForm({...form, email:e.target.value})} style={inp} onFocus={focus} onBlur={blur} />
+                        <input type="tel" placeholder="Phone number — optional" value={form.phone} onChange={e => setForm({...form, phone:e.target.value})} style={inp} onFocus={focus} onBlur={blur} />
+                        <select value={form.situation} onChange={e => setForm({...form, situation:e.target.value})} style={{...inp, color: form.situation ? "var(--text-primary)" : "var(--text-light)", cursor:"pointer"}} onFocus={focus} onBlur={blur}>
+                          <option value="" disabled>What do you need help with?</option>
+                          <option value="itin">ITIN Application</option>
+                          <option value="ein">EIN Registration</option>
+                          <option value="refund">Tax Refund Claim</option>
+                          <option value="filing">Tax Return Filing</option>
+                          <option value="other">Other / Not Sure</option>
+                        </select>
+                        <textarea placeholder="Your message — optional" value={form.notes} onChange={e => setForm({...form, notes:e.target.value})} rows={3} style={{...inp, resize:"vertical", minHeight:70}} onFocus={focus} onBlur={blur} />
+                        <button type="button" onClick={handleSubmit} disabled={submitting || !form.name || !form.email} style={{ width:"100%", padding:16, border:"none", borderRadius:8, background: submitting ? "var(--brown-400)" : "var(--brown-900)", color:"var(--cream)", fontSize:16, fontWeight:600, fontFamily:"var(--font-body)", cursor: submitting ? "wait" : "pointer", transition:"all 0.2s", letterSpacing:"0.02em", opacity: (!form.name || !form.email) ? 0.5 : 1, marginTop:4 }} onMouseEnter={e => { if(!submitting) e.target.style.background="var(--brown-800)"; }} onMouseLeave={e => { if(!submitting) e.target.style.background="var(--brown-900)"; }}>
+                          {submitting ? "Sending..." : "Send Message"}
+                        </button>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    function Footer() {
+      return (
+        <footer style={{ background:"var(--brown-900)", color:"var(--brown-300)", padding:"48px 24px 32px", borderTop:"1px solid rgba(212,160,23,0.1)" }}>
+          <div style={{ maxWidth:1100, margin:"0 auto", display:"flex", flexDirection:"column", alignItems:"center", gap:28 }}>
+            <div style={{ width:"100%", display:"flex", flexWrap:"wrap", justifyContent:"center", alignItems:"center", gap:32 }} className="footer-row">
+              <div style={{ display:"flex", alignItems:"center", gap:10 }}>
+                {/* PLACEHOLDER: Replace with <img src="logo.png" alt="MK Tax Solutions" style={{width:36,height:36,borderRadius:'50%'}} /> */}
+                <div style={{ width:36, height:36, borderRadius:"50%", background:"var(--gold-500)", display:"flex", alignItems:"center", justifyContent:"center", fontFamily:"var(--font-display)", fontWeight:700, fontSize:14, color:"var(--brown-900)" }}>MK</div>
+                <span style={{ fontFamily:"var(--font-display)", fontWeight:600, fontSize:16, color:"var(--cream)" }}>MK Tax Solutions</span>
+              </div>
+              <div style={{ width:4, height:4, borderRadius:"50%", background:"var(--brown-600)" }} className="footer-dot" />
+              <div style={{ display:"flex", gap:24, flexWrap:"wrap", alignItems:"center" }}>
+                {/* PLACEHOLDER: Replace # with actual URLs */}
+                <a href="#" style={{ color:"var(--brown-300)", textDecoration:"none", fontSize:14, transition:"color 0.2s" }} onMouseEnter={e => e.target.style.color="var(--gold-400)"} onMouseLeave={e => e.target.style.color="var(--brown-300)"}>Privacy Policy</a>
+                <a href="#" style={{ color:"var(--brown-300)", textDecoration:"none", fontSize:14, transition:"color 0.2s" }} onMouseEnter={e => e.target.style.color="var(--gold-400)"} onMouseLeave={e => e.target.style.color="var(--brown-300)"}>Terms of Service</a>
+              </div>
+              <div style={{ width:4, height:4, borderRadius:"50%", background:"var(--brown-600)" }} className="footer-dot" />
+              <div style={{ display:"flex", gap:12 }}>
+                {[
+                  { icon:Icons.telegram, href:SOCIALS.telegram },
+                  { icon:Icons.whatsapp, href:SOCIALS.whatsapp },
+                  { icon:Icons.instagram, href:SOCIALS.instagram },
+                  { icon:Icons.facebook, href:SOCIALS.facebook },
+                ].map((s,i) => <a key={i} href={s.href} target="_blank" rel="noopener noreferrer" style={{ color:"var(--brown-400)", transition:"color 0.2s", textDecoration:"none" }} onMouseEnter={e => e.currentTarget.style.color="var(--gold-400)"} onMouseLeave={e => e.currentTarget.style.color="var(--brown-400)"}>{s.icon}</a>)}
+              </div>
+            </div>
+            <div style={{ width:"100%", paddingTop:20, borderTop:"1px solid rgba(255,255,255,0.06)", textAlign:"center", fontSize:13, color:"var(--brown-500)" }}>
+              © {new Date().getFullYear()} MK Tax Solutions. All rights reserved.
+            </div>
+          </div>
+        </footer>
+      );
+    }
+
+    // ─── App ───
+    function App() {
+      return (
+        <>
+          <Navbar />
+          <main>
+            <Hero />
+            <HowItWorks />
+            <About />
+            <Pricing />
+            <Trustpilot />
+            <FAQ />
+            <Contact />
+          </main>
+          <Footer />
+        </>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+</html>
