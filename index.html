@@ -277,8 +277,7 @@
         <nav style={{ position:"fixed", top:0, left:0, right:0, zIndex:1000, padding: scrolled ? "10px 0" : "16px 0", background: scrolled ? "rgba(59,35,20,0.97)" : "transparent", backdropFilter: scrolled ? "blur(12px)" : "none", transition:"all 0.35s ease", borderBottom: scrolled ? "1px solid rgba(212,160,23,0.2)" : "none" }}>
           <div style={{ maxWidth:1200, margin:"0 auto", padding:"0 24px", display:"flex", alignItems:"center", justifyContent:"space-between" }}>
             <a href="#hero" style={{ display:"flex", alignItems:"center", gap:10, textDecoration:"none" }}>
-              {/* PLACEHOLDER: Replace with <img src="logo.png" alt="MK Tax Solutions" style={{width:44,height:44,borderRadius:'50%'}} /> */}
-              <img src="logo.png" alt="MK Tax Solutions" style={{ width:44, height:44, borderRadius:"50%", objectFit:"cover" }} />, color:"var(--brown-900)" }}>MK</div>
+              <img src="logo.png" alt="MK Tax Solutions" style={{ width:44, height:44, borderRadius:"50%", objectFit:"cover" }} />
               <span style={{ fontFamily:"var(--font-display)", fontWeight:600, fontSize:18, color:"var(--cream)", letterSpacing:"0.02em" }}>MK Tax Solutions</span>
             </a>
             <div style={{ display:"flex", alignItems:"center", gap:32 }} className="nav-desktop">
@@ -707,11 +706,10 @@
           <div style={{ maxWidth:1100, margin:"0 auto", display:"flex", flexDirection:"column", alignItems:"center", gap:28 }}>
             <div style={{ width:"100%", display:"flex", flexWrap:"wrap", justifyContent:"center", alignItems:"center", gap:32 }} className="footer-row">
               <div style={{ display:"flex", alignItems:"center", gap:10 }}>
-                {/* PLACEHOLDER: Replace with <img src="logo.png" alt="MK Tax Solutions" style={{width:36,height:36,borderRadius:'50%'}} /> */}
-                <div style={{ width:36, height:36, borderRadius:"50%", background:"var(--gold-500)", display:"flex", alignItems:"center", justifyContent:"center", fontFamily:"var(--font-display)", fontWeight:700, fontSize:14, color:"var(--brown-900)" }}>MK</div>
+                <img src="logo.png" alt="MK Tax Solutions" style={{ width:36, height:36, borderRadius:"50%", objectFit:"cover" }} />
                 <span style={{ fontFamily:"var(--font-display)", fontWeight:600, fontSize:16, color:"var(--cream)" }}>MK Tax Solutions</span>
               </div>
-              <img src="logo.png" alt="MK Tax Solutions" style={{ width:36, height:36, borderRadius:"50%", objectFit:"cover" }} />
+              <div style={{ width:4, height:4, borderRadius:"50%", background:"var(--brown-600)" }} className="footer-dot" />
               <div style={{ display:"flex", gap:24, flexWrap:"wrap", alignItems:"center" }}>
                 {/* PLACEHOLDER: Replace # with actual URLs */}
                 <a href="#" style={{ color:"var(--brown-300)", textDecoration:"none", fontSize:14, transition:"color 0.2s" }} onMouseEnter={e => e.target.style.color="var(--gold-400)"} onMouseLeave={e => e.target.style.color="var(--brown-300)"}>Privacy Policy</a>
